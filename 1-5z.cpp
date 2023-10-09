@@ -90,6 +90,17 @@ int itc_second_min_num(long long number){
     cout << min2 << endl;
     }
 }
-
+long long itc_five_num(loong long number){
+    int sum = 0;
+    int power = 1;
+    while (number > 0){
+        int digit = number % 10;
+        sum += digit;
+        number /= 5;
+        cout << digit;
+        power *=10;
+    }
+    cout << sum << endl;
+}
 
 
